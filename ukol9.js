@@ -2,7 +2,8 @@ var novyPrvek = function(element, css) {
   var element = document.createElement(element);
   element.className = css.join(";");
   return function(text){
-   return element.appendChild(document.createTextNode(text)).toString();
+    element.appendChild(document.createTextNode(text));
+    return element.outerHTML.toString();
   }
 }
 

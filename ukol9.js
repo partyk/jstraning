@@ -14,9 +14,3 @@ console.log(mujPrvek('Kocicka'));
 console.log(mujPrvek('Kocicka'));
 console.log(mujPrvek('Kocicka'));
 console.log(mujPrvek('Kocicka'));
-
-/*
-Exception: TypeError: element.innerHTML is not a function
-novyPrvek/<@Scratchpad/1:5:5
-@Scratchpad/1:12:20
-*/

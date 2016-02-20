@@ -63,3 +63,4 @@ var iPhone = new Mobil({
 });
 
 console.log(iPhone.oMobilu());
+console.log("Baterie: " + iPhone.maBaterii());

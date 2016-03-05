@@ -1,6 +1,8 @@
 "use strict";
 switch(a) {
-    case (a === 1 && b < 5 && (x-y) === 20):
+    case (a !== 1):
+        break;
+    case (b < 5 && (x-y) === 20):
         console.log('vysledek 1');
         break;
     case (c > 3 && d(e) === f):

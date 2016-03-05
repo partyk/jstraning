@@ -6,9 +6,10 @@
 
 function extend(A, B) {
   var oldPrototype = B.prototype;
-  function F(){}
+ /* function F(){}
   F.prototype = A.prototype;
-  B.prototype = new F();
+  B.prototype = new F();*/
+  B.prototype = Object.create(A.prototype);
   for (var k in oldPrototype){
     B.prototype[k] = oldPrototype[k];
   }
@@ -64,3 +65,8 @@ var iPhone = new Mobil({
 
 console.log(iPhone.oMobilu());
 console.log("Baterie: " + iPhone.maBaterii());
+/*
+Exception: TypeError: Object.createcre is not a function
+extend@Scratchpad/1:12:17
+@Scratchpad/1:51:1
+*/
